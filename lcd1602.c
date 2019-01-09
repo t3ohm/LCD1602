@@ -138,7 +138,7 @@ int lcd1602Clear(void)
 {
 	if (file_i2c < 0)
 		return 1;
-	WriteCommand(0x0E); // clear the screen
+	WriteCommand(0x01); // clear the screen
 	return 0;
 
 } /* lcd1602Clear() */
