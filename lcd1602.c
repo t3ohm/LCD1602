@@ -195,6 +195,14 @@ unsigned char cCmd;
 
 } /* lcd1602SetCursor() */
 
+void waitforuser()
+{
+	fflush(stdin);
+	invoer = getchar();
+	return invoer
+}
+
+
 void lcd1602Shutdown(void)
 {
 	iBackLight = 0; // turn off backlight
